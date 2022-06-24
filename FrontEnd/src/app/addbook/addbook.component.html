@@ -1,0 +1,62 @@
+<div class="formbody">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-sm-10 col-md-6 formitem">
+
+        <form #form="ngForm" (ngSubmit)="form.valid&&addbook()">
+          <h3 class="text-center mb-4">Add Book</h3>
+          <div class="mb-3">
+            <label class="form-label">Code</label>
+            <input type="number" required class="form-control" #code="ngModel" name="code" [(ngModel)]="books.code">
+            <small class="text-danger" *ngIf="form.submitted&&code.errors?.['required']">*Input Field Invaild</small>
+          </div>
+
+          <div class="mb-3">
+            <label  class="form-label">Book Name</label>
+            <input name="bookname" required #bookname="ngModel" [(ngModel)]="books.bookname"  class="form-control">
+            <small class="text-danger" *ngIf="form.submitted&&bookname.errors?.['required']">*Input Field Invaild</small>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Author</label>
+            <input  name="author" [(ngModel)]="books.author" required #author="ngModel"  class="form-control">
+            <small class="text-danger" *ngIf="form.submitted&&author.errors?.['required']">*Input Field Invaild</small>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Edition</label>
+            <input name="edition" [(ngModel)]="books.edition" required #edition="ngModel"   class="form-control">
+            <small class="text-danger" *ngIf="form.submitted&&edition.errors?.['required']">*Input Field Invaild</small>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Rating</label>
+            <input type="number" name="rating" [(ngModel)]="books.rating" min="0" max="5" required #rating="ngModel"   class="form-control">
+            <small class="text-danger" *ngIf="form.submitted&&rating.errors?.['max']">Rating should be between 0 and 5</small>
+            <small class="text-danger" *ngIf="form.submitted&&rating.errors?.['required']">*Input Field Invaild</small>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Image Url</label>
+            <input name="imageurl" [(ngModel)]="books.imageurl" required #imageurl="ngModel"  class="form-control">
+            <small class="text-danger" *ngIf="form.submitted&&imageurl.errors?.['required']">*Input Field Invaild</small>
+          </div>
+
+          <div class="mb-3">
+            <label>Description</label>
+            <textarea class="form-control"  rows="3" required #description="ngModel"  name="description" [(ngModel)]="books.description"></textarea>
+            <small class="text-danger" *ngIf="form.submitted&&description.errors?.['required']">*Input Field Invaild</small>
+          </div>
+
+          <div class="text-center mt-5">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>

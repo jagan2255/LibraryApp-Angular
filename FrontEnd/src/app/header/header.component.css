@@ -1,0 +1,11 @@
+.background{
+    background-color:cornflowerblue;
+    
+}
+.search{
+    width: 245px;
+    height: 32px;
+}
+nav{
+    min-height: 65px;
+    font-family: 'Chakra Petch', sans-serif;}

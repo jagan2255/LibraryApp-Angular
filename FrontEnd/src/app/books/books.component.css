@@ -1,0 +1,32 @@
+.homebody{
+    min-height: 600px;
+    background-color: rgba(255, 228, 196, 0.72);
+    background-image: url('https://wallpaperaccess.com/full/3133075.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.tableitem{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+.color1{
+    color: blue;
+    cursor: pointer;
+}
+.color2{
+    color: red;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 550px) {
+    .invisible22{
+        display:none;
+    }
+  }
+
+  table{
+    font-family: 'Comic Neue', cursive;
+  }
+

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+
+.unlogin{
+    background-image: url('https://wallpaperbat.com/img/189576-reading-books-wallpaper-magical-reading.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    min-height: 539px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.texthome{
+    padding:20px;
+    font-size: 40px;
+    font-family: 'Pangolin', cursive;
+}
+
+.button {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    border: 2px solid white;
+    background: rgb(255, 0, 140);
+    border-radius: 1000px;
+    padding: 10px 20px;
+    margin: 25px;
+    box-shadow: 0 2px 5px 0 rgba(3,6,26,0.15);
+    transition: .5s all ease-in-out;
+}
+    .button:hover {
+      cursor: pointer;
+      background: rgb(255, 0, 0);
+      color: #ffffff;
+      animation: none;
+
+    }
+  
+  
+  
+  
+  .button-float {
+    animation: float 1.5s linear alternate infinite;
+  }
+  
+  @keyframes float {
+      50% {
+      transform: translateY(-px);
+    }
+    100% {
+      transform: translateY(-18px);
+    }
+  }
+
+/* Content for logedIn Users */
+
+.homebody{
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center; */
+  min-height: 550px;
+  background-image: url('https://wallpaperaccess.com/full/3133075.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.hover22:hover{
+transform: scale(1.1);
+transition: 0.1s all ease-in-out;
+} 
+.hover22{
+    transition: 0.1s all ease-in-out;
+}
+.bgcolor{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color:wheat;
+
+}
+.imagehover{
+    transition: 0.1s all ease-in-out;
+    
+
+}
+
+.imagehover:hover{
+    transform: scale(0.95);
+    transition: 0.1s all ease-in-out;
+}
+.textoflow{
+    font-size: 18px;
+    overflow:hidden;
+
+}

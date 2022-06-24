@@ -1,0 +1,54 @@
+<div class="formbody">
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col col-sm-10 col-md-6 formitem">
+
+        <form (ngSubmit)="updatebook()">
+          <h3 class="text-center mb-4">Update Book</h3>
+          <div class="mb-3">
+            <label class="form-label">Code</label>
+            <input type="number" class="form-control" name="code" [(ngModel)]="books.code">
+          </div>
+
+          <div class="mb-3">
+            <label  class="form-label">Book Name</label>
+            <input name="bookname" [(ngModel)]="books.bookname"  class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Author</label>
+            <input  name="author" [(ngModel)]="books.author"  class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Edition</label>
+            <input name="edition" [(ngModel)]="books.edition"  class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Rating</label>
+            <input type="number" name="rating" [(ngModel)]="books.rating"  class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Image Url</label>
+            <input name="imageurl" [(ngModel)]="books.imageurl"  class="form-control">
+          </div>
+
+          <div class="mb-3">
+            <label>Description</label>
+            <textarea class="form-control"  rows="3" name="description" [(ngModel)]="books.description"></textarea>
+          </div>
+
+          <div class="text-center mt-5">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>

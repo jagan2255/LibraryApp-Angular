@@ -1,0 +1,28 @@
+.homebody{
+    min-height: 600px;
+    background-color: rgba(255, 228, 196, 0.72);
+    background-image: url('https://wallpaperaccess.com/full/3133075.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.loginitem{
+    /* border: 2px solid white; */
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 50px;
+    background-color: rgba(245, 222, 179, 0.92);
+    border-radius: 30px;
+}
+@media only screen and (min-width: 700px) {
+    .loginitem {
+        padding: 40px;
+    }
+  }
+
+  form{
+    font-family: 'Blinker', sans-serif;
+  }
+
+  
+  

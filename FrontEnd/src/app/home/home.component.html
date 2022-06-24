@@ -1,0 +1,32 @@
+<div *ngIf="!user.logedIn()" class="unlogin">
+<div>
+    <h3 class="text-white texthome">Nothing is pleasanter than exploring a library</h3>
+    <div class="text-center">    
+        <a style="font-family: 'Pangolin', cursive;" routerLink="login" class="button button-float btn btn-outline-light">Explore</a>
+    </div>
+</div>
+</div>
+
+    <!-- Content for logedIn Users -->
+
+<div *ngIf="user.logedIn()" class="homebody">
+    <div class="cont22" >
+        <div class="container pt-5 pb-5" >
+            <div class="row " >
+                <div class="col-6 col-sm-4 col-md-3 pb-4" *ngFor="let i of books">
+                    <div class="card mb-3 bgcolor " style="max-width: 18rem;">
+                        <div style="font-family: 'Comic Neue', cursive;" class="card-header text-center text-white bg-danger">Rating: {{i.rating}}/5</div>
+                        <div class="imagehover">
+                        <img src="{{i.imageurl}}" class="card-img-top" style="height:250px ;">
+                        </div>
+                        <div class="card-body">
+                          <h4 style="font-family: 'Prompt', sans-serif; height:40px;" class="textoflow card-title text-center">{{i.bookname}}</h4>
+                          <p style="font-family: 'NTR', sans-serif;font-family: 'NTR', sans-serif;" class="text-center">Author: {{i.author}}</p>
+                          <p (click)="viewbook(i)" style="cursor:pointer ; font-family: 'Comic Neue', cursive;" class="hover22 card-text text-center bg-danger text-white p-2">Read More..</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,21 @@
+.formbody{
+    min-height: 550px;
+    background-color: rgba(255, 228, 196, 0.72);
+    background-image: url('https://wallpaperaccess.com/full/3133075.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.formitem{
+    /* border: 2px solid white; */
+    margin: 15px;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    padding: 40px;
+    background-color: rgba(245, 222, 179, 0.945);
+    border-radius: 20px;
+}
+form{
+    font-family: 'Blinker', sans-serif;
+
+}
